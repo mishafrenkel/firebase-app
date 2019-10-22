@@ -76,7 +76,9 @@ class SignUpForm extends React.Component {
           type="password"
           placeholder="Confirm Password"
         />
-        <button type="submit">Sign Up</button>
+        <button disabled={isInvalid} type="submit">
+          Sign Up
+        </button>
         {error && <p>{error.message}</p>}
       </form>
     );
